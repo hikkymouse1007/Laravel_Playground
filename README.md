@@ -12,6 +12,10 @@ https://qiita.com/reflet/items/e1076e7dd3cb30c6971a
 - Seeder
 - Factory
 
+## メモ
+- レスポンスコード一覧
+/vendor/symfony/http-foundation/Response.php
+
 ## 基本構成は以下の記事を参考
 https://qiita.com/A-Kira/items/9a03d7b230741ed7b1de
 
