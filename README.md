@@ -1,3 +1,16 @@
+# まとめたいことリスト
+- Middlewareの活用法
+- テストコードのテンプレ化
+- APIレスポンスのjson化
+- テスト自動化(CircleCI or GitHubActions)
+- Guzzleのリクエスト
+- Redis
+- DynamoDB
+- TDD
+- DDD
+- Seeder
+- Factory
+
 ## 基本構成は以下の記事を参考
 https://qiita.com/A-Kira/items/9a03d7b230741ed7b1de
 
