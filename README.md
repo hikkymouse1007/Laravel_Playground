@@ -2,6 +2,7 @@
 - Middlewareの活用法
 - テストコードのテンプレ化
 - APIレスポンスのjson化
+https://qiita.com/reflet/items/e1076e7dd3cb30c6971a
 - テスト自動化(CircleCI or GitHubActions)
 - Guzzleのリクエスト
 - Redis
