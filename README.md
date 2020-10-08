@@ -1,7 +1,7 @@
 # まとめたいことリスト
 - Middlewareの活用法
 - テストコードのテンプレ化
-- APIレスポンスのjson化
+- APIエラーレスポンスのjson化
 https://qiita.com/reflet/items/e1076e7dd3cb30c6971a
 - テスト自動化(CircleCI or GitHubActions)
 - Guzzleのリクエスト
@@ -11,6 +11,11 @@ https://qiita.com/reflet/items/e1076e7dd3cb30c6971a
 - DDD
 - Seeder
 - Factory
+- サービスコンテナ
+https://qiita.com/dublog/items/3314ca25a90e76f63b17
+- DI(Dependency Injection)
+https://qiita.com/hshimo/items/1136087e1c6e5c5b0d9f
+https://qiita.com/harunbu/items/079ea728d2c9cf4f44d5
 
 ## メモ
 - レスポンスコード一覧
