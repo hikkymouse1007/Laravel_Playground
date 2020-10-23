@@ -38,3 +38,35 @@ https://github.com/nginx-proxy/nginx-proxy
 
 Dockerサービスの簡単リバースプロキシ
 https://qiita.com/South_/items/7bdb1f373410cb1c907b
+
+## Dockerのメモ
+コンテナ内から他のコンテナに通信したい場合は
+docker-compose.ymlにhostnameを指定する
+
+```
+// docker-compose.yml
+elasticsearch:
+    image: elasticsearch:7.9.3
+    hostname: es-server //ホスト名
+    volumes:
+      - ./elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    environment:
+      - discovery.type=single-node
+
+// 確認
+$ docker exec laravel_playground_elasticsearch_1 hostname
+es-server
+
+// Laravelコントローラからの指定(PHPコンテナ内)
+public function getData()
+    {
+        // // # 同時視聴者数取得コマンド
+        $client = new Client();
+        $uri = 'http://es-server:9200'; //ベースURL,ポートは9200を指定
+```
+
+## elastcisearchの記事
+https://hub.docker.com/_/elasticsearch
+https://www.elastic.co/guide/en/elasticsearch/reference/7.5/docker.html

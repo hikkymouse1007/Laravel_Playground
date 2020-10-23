@@ -21,7 +21,7 @@ services:
     depends_on:
       - u-db
     environment:
-      - VIRTUAL_HOST=laravel.udemy.localhost
+      - VIRTUAL_HOST=playground.localhost
 
   u-db:
     image: mysql:5.7
@@ -40,6 +40,16 @@ services:
     ports:
       - 3306:3306
     restart: always
+
+  elasticsearch:
+    image: elasticsearch:7.9.3
+    hostname: es-server
+    volumes:
+      - ./elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    environment:
+      - discovery.type=single-node
 
   phpmyadmin:
     container_name: phpmyadmin

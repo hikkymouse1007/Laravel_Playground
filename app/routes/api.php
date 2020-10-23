@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('getdata','Api\ElasticController@getData');
+Route::get('postdata','Api\ElasticController@postData');
+Route::get('getcount','Api\ElasticController@getCount');
+Route::get('create','Api\ElasticController@createTable');
