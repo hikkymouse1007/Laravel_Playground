@@ -61,3 +61,6 @@ https://github.com/nginx-proxy/nginx-proxy
 
 Dockerサービスの簡単リバースプロキシ
 https://qiita.com/South_/items/7bdb1f373410cb1c907b
+
+## LaravelのnullとRequestクラス
+https://www.bit-hive.com/articles/20190514
